@@ -1,0 +1,26 @@
+[project]
+name = "think"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "dvc>=3.59.1",
+    "dvc-s3>=3.2.0",
+    "python-dotenv>=1.0.1",
+    "typer>=0.15.1",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+    "ruff>=0.9.5",
+    "pandas>=2.2.3",
+    "matplotlib>=3.10.1",
+    "seaborn>=0.13.2",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build" 
